@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div:hover {
+            color: rgb(186, 4, 4);
+        }
+        /*o símbolo > indica que o 'p' que será formatada é o filho que está dentro da 'div' e não o que está fora */
+        div > p {
+            display: none; /* esse diplay faz com que o texto fique escondido*/
+        }
+
+        div:hover > p {
+            display: block; /* faz o texto aparecer quando passar o mouse sobre ou outro texto do 'passe o moude aqui' */
+            color: white;
+            background-color: rgb(244, 63, 63);
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o moude sobre o texto abaixo.</p>
+    <div>
+        Passe o mouse aqui.
+        <p>Texto Escondido...</p>
+    </div>
+    <p>Fim do Exemplo</p>
+</body>
+</html>
